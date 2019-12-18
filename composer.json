@@ -36,10 +36,5 @@
 	],
 	"require": {
 		"rok9ru/trpo-core": "dev-master"
-	},
-	"autoload": {
-    "psr-0": {
-      "core": "",
-    }
-  }
+	}
 }

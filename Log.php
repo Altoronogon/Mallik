@@ -8,6 +8,7 @@ class Log extends \core\LogAbstract implements \core\LogInterface {
 
 	public function _write() {
 		$d = new \DateTime();
+		if(!is_dir("./log/")) mkdir ("./log/");
 		$filename = "log/".$d->format('d.m.Y\_H.i.s.u');
 		$file = fopen($filename.".log","w+");
 		foreach($this->log as $val) {
